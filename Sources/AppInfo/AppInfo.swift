@@ -72,19 +72,19 @@ public enum App: Hashable {
     public var storeId: String {
         switch self {
         case .lemon:
-            return "id6449700998"
+            return "6449700998"
         case .moontake:
-            return "id6451189717"
+            return "6451189717"
         case .coconut:
-            return "id6469671638"
+            return "6469671638"
         case .festivals:
-            return "id6460976841"
+            return "6460976841"
         case .pigeon:
-            return "id6473819512"
+            return "6473819512"
         case .one:
-            return "id6474681491"
+            return "6474681491"
         case .offDay:
-            return "id6501973975"
+            return "6501973975"
         }
     }
 }
