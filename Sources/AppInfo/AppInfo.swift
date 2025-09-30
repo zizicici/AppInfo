@@ -11,6 +11,7 @@ public enum App: Hashable {
     case pigeon
     case one
     case offDay
+    case tagDay
     
     var image: UIImage? {
         switch self {
@@ -28,6 +29,8 @@ public enum App: Hashable {
             return UIImage(named: "OneOneIcon", in: .module, compatibleWith: nil)
         case .offDay:
             return UIImage(named: "OffDayIcon", in: .module, compatibleWith: nil)
+        case .tagDay:
+            return UIImage(named: "TagDayIcon", in: .module, compatibleWith: nil)
         }
     }
     
@@ -47,6 +50,8 @@ public enum App: Hashable {
             return "1/1"
         case .offDay:
             return String(localized: "app.offDay.title", bundle: .module, comment: "Off Day")
+        case .tagDay:
+            return String(localized: "app.tagDay.title", bundle: .module)
         }
     }
     
@@ -66,6 +71,8 @@ public enum App: Hashable {
             return String(localized: "app.one.subtitle", bundle: .module, comment: "1/1")
         case .offDay:
             return String(localized: "app.offDay.subtitle", bundle: .module)
+        case .tagDay:
+            return String(localized: "app.tagDay.subtitle", bundle: .module)
         }
     }
     
@@ -85,6 +92,8 @@ public enum App: Hashable {
             return "6474681491"
         case .offDay:
             return "6501973975"
+        case .tagDay:
+            return "6745145597"
         }
     }
 }
@@ -92,9 +101,6 @@ public enum App: Hashable {
 public class AppCell: UITableViewCell {
     private var icon: UIImageView = {
         let imageView = UIImageView()
-        imageView.layer.cornerCurve = .continuous
-        imageView.layer.cornerRadius = 8.0
-        imageView.clipsToBounds = true
         
         return imageView
     }()
