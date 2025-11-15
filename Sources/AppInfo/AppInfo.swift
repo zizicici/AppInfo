@@ -12,6 +12,7 @@ public enum App: Hashable {
     case one
     case offDay
     case tagDay
+    case pin
     
     var image: UIImage? {
         switch self {
@@ -31,6 +32,8 @@ public enum App: Hashable {
             return UIImage(named: "OffDayIcon", in: .module, compatibleWith: nil)
         case .tagDay:
             return UIImage(named: "TagDayIcon", in: .module, compatibleWith: nil)
+        case .pin:
+            return UIImage(named: "PinItIcon", in: .module, compatibleWith: nil)
         }
     }
     
@@ -52,6 +55,8 @@ public enum App: Hashable {
             return String(localized: "app.offDay.title", bundle: .module, comment: "Off Day")
         case .tagDay:
             return String(localized: "app.tagDay.title", bundle: .module)
+        case .pin:
+            return String(localized: "app.pin.title", bundle: .module)
         }
     }
     
@@ -73,6 +78,8 @@ public enum App: Hashable {
             return String(localized: "app.offDay.subtitle", bundle: .module)
         case .tagDay:
             return String(localized: "app.tagDay.subtitle", bundle: .module)
+        case .pin:
+            return String(localized: "app.pin.subtitle", bundle: .module)
         }
     }
     
@@ -94,6 +101,8 @@ public enum App: Hashable {
             return "6501973975"
         case .tagDay:
             return "6745145597"
+        case .pin:
+            return "6753946385"
         }
     }
 }
