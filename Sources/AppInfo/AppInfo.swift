@@ -3,6 +3,10 @@
 
 import UIKit
 
+public enum Developer {
+    public static let pageURL = "https://apps.apple.com/developer/zizicici-limited/id1564555697"
+}
+
 public enum App: Hashable {
     case lemon
     case moontake
